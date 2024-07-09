@@ -1,454 +1,464 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 .skeleton {
-    animation: skeleton-loading 1s linear infinite alternate;
+  animation: skeleton-loading 1s linear infinite alternate;
 }
 
 @keyframes skeleton-loading {
-    0% {
-        background-color: hsl(200, 20%, 70%);
-    }
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
 
-    100% {
-        background-color: hsl(200, 20%, 90%);
-    }
+  100% {
+    background-color: hsl(200, 20%, 90%);
+  }
 }
 
 .skeleton-text {
-    width: 100%;
-    height: .5rem;
-    margin-top: .125rem;
-    background-color: rgb(173, 173, 173);
-    border-radius: 2px;
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.125rem;
+  background-color: rgb(173, 173, 173);
+  border-radius: 2px;
 }
 
 .skeleton-text:last-child {
-    width: 80%;
+  width: 80%;
 }
 
 .icon {
-    width: 15px;
-    height: 20px;
-    margin-top: .125rem;
+  width: 15px;
+  height: 20px;
+  margin-top: 0.125rem;
 }
 
 body {
-    background-color: rgb(173, 173, 173);
-
+  background-color: rgb(173, 173, 173);
 }
 
 nav {
-    position: fixed;
-    width: 0;
-    background-color: black;
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    height: 100%;
-    padding-top: 60px;
-    transition: 0.6s;
-    font-size: 25px;
-    z-index: 1;
-    overflow-x: hidden;
-    top: 0;
-    left: 0;
+  position: fixed;
+  width: 0;
+  background-color: black;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  height: 100%;
+  padding-top: 60px;
+  transition: 0.6s;
+  font-size: 25px;
+  z-index: 1;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
 }
 
 .op {
-    font-size: 30px;
-    font-weight: 900;
-    padding: 20px;
-    position: fixed;
-    cursor: pointer;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px;
+  position: fixed;
+  cursor: pointer;
 }
 
 .op:hover {
-    background-color: rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221);
 }
 
 nav a {
-    margin: 20px 30px;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
+  margin: 20px 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 nav a:hover {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .closebtn {
-    margin: 0;
-    font-size: 36px;
-    position: absolute;
-    margin-left: 50px;
-    color: white;
-    right: 25px;
-    top: 0;
+  margin: 0;
+  font-size: 36px;
+  position: absolute;
+  margin-left: 50px;
+  color: white;
+  right: 25px;
+  top: 0;
 }
 
 .closebtn:hover {
-    font-size: 38px;
-
+  font-size: 38px;
 }
 
 hr {
-    margin: 20px 30px;
-
+  margin: 20px 30px;
 }
-
+.topImages {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.topImg img {
+  width: 800px;
+  height: 200px;
+  position: absolute;
+  transition: transform 0.5s;
+}
 .head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 30px 0;
 }
 
 .search input {
-    width: 200px;
-    height: 30px;
-    margin: 0 20px;
-    text-align: center;
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  text-align: center;
 }
 
 .search button {
-    width: 60px;
-    height: 30px;
-    margin: 0 20px;
-    background-color: green;
-    color: white;
-    border: 1px solid green;
+  width: 60px;
+  height: 30px;
+  margin: 0 20px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(173, 173, 173);
-    margin: 0 25px;
-}
-
-.container1 {
-    background-color: white;
-    max-width: 600px;
-    padding: 10px;
-    border-radius: 20px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(173, 173, 173);
+  margin: 0 25px;
 }
 
 .products {
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
 }
 
 .prod {
-    margin: 30px 45px;
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 3px 4px 5px grey;
+  margin: 30px 45px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px grey;
 }
 
 .prod:hover {
-    font-size: 120%;
+  font-size: 120%;
 
-    .img {
-        width: 170px;
-        height: 160px;
-    }
+  .img {
+    width: 170px;
+  }
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title {
-    width: 160px;
+  width: 160px;
 }
 
 .img {
-    width: 160px;
-    height: 150px;
+  width: 160px;
+  height: 150px;
 }
 
 .des {
-    font-size: 10px;
-    width: 150px;
+  font-size: 10px;
+  width: 150px;
 }
 
 .price {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: "Bebas Neue", sans-serif;
-
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Bebas Neue", sans-serif;
 }
-
-.form1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-    font-size: 23px;
-}
-
-.label1 {
-    margin-top: 10px;
-    font-weight: 800;
-}
-
-.input1 {
-    margin-top: 10px;
-    width: 200px;
-
-}
-
-.button1 {
-    margin-top: 25px;
-    width: 120px;
-    height: 30px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.button1 a {
-    text-decoration: none;
-    color: black;
-}
-
 .EditDel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .edit {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 i:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .popup {
-    position: fixed;
+  position: fixed;
 
-    top: 20%;
-    right: 40%;
+  top: 20%;
+  right: 40%;
 
-    border: 1px solid black;
-    background-color: white;
-    width: 250px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 23px;
+  border: 1px solid black;
+  background-color: white;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
 }
 
 .bar {
-    width: 100%;
-    height: 20px;
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  height: 20px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .bar2 {
-    width: 20px;
-    background-color: red;
-    height: 20px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    cursor: pointer;
+  width: 20px;
+  background-color: red;
+  height: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .popupBtn {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .popupBtn button {
-    width: 90px;
-    cursor: pointer;
+  width: 90px;
+  cursor: pointer;
 }
 
 .scroll-top {
-    position: fixed;
-    background-color: bisque;
-    font-size: 30px;
-    font-weight: 900;
-    top: 85%;
-    right: 4%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
-    animation: scroll-top-ani .5s linear infinite alternate;
-    display: none;
+  position: fixed;
+  background-color: bisque;
+  font-size: 30px;
+  font-weight: 900;
+  top: 85%;
+  right: 4%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: scroll-top-ani 0.5s linear infinite alternate;
+  display: none;
+}
+.container1 {
+  max-width: 500px;
+  margin: auto;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.label1 {
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.input1 {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button1 {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button1 a {
+  color: white;
+  display: block;
+}
+
+.button1:hover {
+  background-color: #218838;
 }
 
 @keyframes scroll-top-ani {
-    0% {
-        width: 50px;
-        height: 50px;
-    }
+  0% {
+    width: 50px;
+    height: 50px;
+  }
 
-    100% {
-        width: 55px;
-        height: 55px;
-        font-size: 35px;
-    }
+  100% {
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
-@media(max-width:898px) {
-    .products {
-        max-width: 700px;
+@media (max-width: 898px) {
+  .products {
+    max-width: 700px;
+  }
 
-    }
+  .prod {
+    margin: 30px 20px;
+  }
 
-    .prod {
-        margin: 30px 20px;
-    }
+  .title {
+    width: 120px;
+  }
 
-    .title {
-        width: 120px;
-    }
+  .img {
+    width: 120px;
+    height: 120px;
+  }
 
-    .img {
-        width: 120px;
-        height: 120px;
-    }
+  .des {
+    font-size: 10px;
+    width: 120px;
+  }
 
-    .des {
-        font-size: 10px;
-        width: 120px;
-    }
-
-    .price {
-        font-size: 30px;
-        font-weight: bolder;
-        font-family: "Bebas Neue", sans-serif;
-
-    }
+  .price {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Bebas Neue", sans-serif;
+  }
 }
 
-@media(max-width:625px) {
+@media (max-width: 625px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .products {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .prod {
+    margin: 30px 20px;
+  }
 
-    .prod {
-        margin: 30px 20px;
-    }
+  .title {
+    width: 170px;
+  }
 
-    .title {
-        width: 170px;
-    }
+  .img {
+    width: 170px;
+    height: 150px;
+  }
 
-    .img {
-        width: 170px;
-        height: 150px;
-    }
+  .des {
+    font-size: 10px;
+    width: 170px;
+  }
 
-    .des {
-        font-size: 10px;
-        width: 170px;
-    }
+  .head {
+    font-size: 40px;
+    margin: 20px 0;
+  }
 
-    .head {
-        font-size: 40px;
-        margin: 20px 0;
-
-    }
-
-    .popup {
-        right: 20%;
-    }
-
+  .popup {
+    right: 20%;
+  }
 }
 
-@media(max-width:405px) {
-    .search input {
-        width: 170px;
-    }
+@media (max-width: 405px) {
+  .search input {
+    width: 170px;
+  }
 
-    .head {
-        font-size: 35px;
-    }
+  .head {
+    font-size: 35px;
+  }
 }
 
-@media(max-width:370px) {
-    .search {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media (max-width: 370px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search input {
+    width: 190px;
+    height: 25px;
+    margin-bottom: 12px;
+  }
+
+  .search button {
+    height: 25px;
+  }
+
+  .op {
+    padding: 20px 7px;
+  }
+
+  .popup {
+    right: 10%;
+  }
+
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    right: 3%;
+  }
+
+  @keyframes scroll-top-ani {
+    0% {
+      width: 40px;
+      height: 40px;
     }
 
-    .search input {
-        width: 190px;
-        height: 25px;
-        margin-bottom: 12px;
+    100% {
+      width: 45px;
+      height: 45px;
+      font-size: 25px;
     }
-
-    .search button {
-        height: 25px;
-    }
-
-    .op {
-        padding: 20px 7px;
-    }
-
-    .popup {
-        right: 10%;
-    }
-
-    .scroll-top {
-        width: 40px;
-        height: 40px;
-        font-size: 22px;
-        right: 3%;
-    }
-
-    @keyframes scroll-top-ani {
-        0% {
-            width: 40px;
-            height: 40px;
-        }
-
-        100% {
-            width: 45px;
-            height: 45px;
-            font-size: 25px;
-        }
-    }
+  }
 }

@@ -1,0 +1,51 @@
+/* Container Styles */
+.container1 {
+  max-width: 500px;
+  margin: auto;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.label1 {
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.input1 {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button1 {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button1 a {
+  color: white;
+  display: block;
+}
+
+.button1:hover {
+  background-color: #218838;
+}
